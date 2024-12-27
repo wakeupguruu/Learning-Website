@@ -1,0 +1,62 @@
+
+.Descriptioncard {
+    width: 100%;
+    background: #000000;
+    overflow: hidden;
+  }
+
+  .Descriptioncard .top-section {
+    min-height: 50vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    /* background: linear-gradient(45deg, #5CAB8C 60%, #abd1c2 100%); */
+    background: #212121;
+    position: relative;
+  }
+  .Descriptioncard .top-section .borderr {
+    border-bottom-right-radius: 10px;
+    height: 30px;
+    width: 65%;
+    background: #000000;
+    position: relative;
+    transform: skew(-45deg);
+    box-shadow: -10px -10px 0 0 #000000;
+  }
+  .Descriptioncard .top-section .borderr::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    right: -15px;
+    background: rgba(255, 255, 255, 0);
+    border-top-left-radius: 10px;
+    box-shadow: -5px -5px 0 2px #000000, -3px -5px 0 2px #000000;
+  }
+  .Descriptioncard .top-section::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: rgba(255, 255, 255, 0);
+    height: 15px;
+    width: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: -5px -5px 0 2px #000000;
+  }
+  .Descriptioncard .top-section .icons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Descriptioncard .top-section .icons .top-section {
+    height: 100%;
+  }
+ 
+
+

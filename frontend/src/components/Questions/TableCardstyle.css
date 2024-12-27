@@ -1,0 +1,89 @@
+.Tablecard {
+  width: 100%;
+  background: #000000;
+  /* overflow: hidden; */
+}
+
+.Tablecard .top-section {
+  min-height: 70vh;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  /* background: linear-gradient(45deg, #5CAB8C 60%, #abd1c2 100%); */
+  background: #212121;
+  position: relative;
+}
+
+/* Changed: right to left alignment */
+.Tablecard .top-section .borderr {
+  border-bottom-left-radius: 10px;
+  /* Changed from border-bottom-right-radius */
+  height: 30px;
+  width: 80%;
+  background: #000000;
+  position: relative;
+  transform: skew(45deg);
+  /* Changed from skew(-45deg) */
+  box-shadow: 10px -10px 0 0 #000000;
+  /* Changed from -10px to 10px */
+  margin-left: auto;
+  /* Added to align to right */
+}
+
+
+
+/* Changed: adjusted pseudo-element position */
+.Tablecard .top-section .borderr::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: -15px;
+  /* Changed from right to left */
+  background: rgba(255, 255, 255, 0);
+  border-top-right-radius: 10px;
+  /* Changed from border-top-left-radius */
+  box-shadow: 5px -5px 0 2px #000000, 3px -5px 0 2px #000000;
+  /* Changed negative values to positive */
+}
+
+/* Changed: adjusted pseudo-element position */
+.Tablecard .top-section::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 0;
+  /* Changed from left to right */
+  background: rgba(255, 255, 255, 0);
+  height: 15px;
+  width: 15px;
+  border-top-right-radius: 15px;
+  /* Changed from border-top-left-radius */
+  box-shadow: 5px -5px 0 2px #000000;
+  /* Changed from -5px to 5px */
+}
+
+.Tablecard .top-section .icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Tablecard .top-section .icons .top-section {
+  height: 100%;
+}
+
+
+
+
+@media (max-width: 608px) {
+  .Tablecard .top-section .borderr {
+
+    width: 70%;
+
+  }
+}
